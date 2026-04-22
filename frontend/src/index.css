@@ -1,0 +1,201 @@
+:root {
+    --hero-bg : #579066;
+    --button-bg : #014F31;
+    --button-hover: #023d26;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+body
+
+/* =========================
+   GLOBAL BUTTON
+========================= */
+button {
+    background-color: #198754;
+    padding: 15px 30px;
+    width: 100%;
+    max-width: 275px;
+    font-size: 1.1em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* =========================
+   SECTIONS GÉNÉRALES
+========================= */
+section {
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.hero img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+.services {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-card {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.service-card h2 {
+    margin: 10px 0;
+    color: #198754;
+}
+
+.service-card p {
+    color: #555;
+    flex-grow: 1;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color:  #014F31;
+    color: white;
+    padding: 20px 40px; 
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    margin-right: 0;
+    transition: transform 0.3s;
+}
+.logo img:hover {
+    transform: scale(1.05);
+}
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #11014f;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #1B3327;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+}
