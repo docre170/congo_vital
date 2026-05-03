@@ -6,7 +6,7 @@ function HomePage() {
       <div>
         <h2>Notre mission</h2>
         <p>Informez-vous et accedez aux soins essentiels pour une meilleure sante.</p>
-        <Link className="btn btn-primary" to="/services">
+        <Link className="btn btn-success" to="/services">
           En savoir plus
         </Link>
       </div>
@@ -16,7 +16,7 @@ function HomePage() {
       <div>
         <h2>Nos services</h2>
         <p>Decouvrez nos services de vaccination, de soins maternels et de prevention.</p>
-        <Link className="btn btn-primary" to="/services">
+        <Link className="btn btn-success" to="/services">
           En savoir plus
         </Link>
       </div>

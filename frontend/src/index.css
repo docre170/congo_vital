@@ -15,8 +15,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
 }
-body
-
+.font {
+    background: var(--hero-bg);
+}
 /* =========================
    GLOBAL BUTTON
 ========================= */
@@ -122,7 +123,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color:  #014F31;
+    background-color:  var(--hero-bg);
     color: white;
     padding: 20px 40px; 
     flex-wrap: wrap;
